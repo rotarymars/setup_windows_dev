@@ -17,7 +17,7 @@ iwr -useb get.scoop.sh | iex
 必要なアプリケーションをインストールする
 
 ```bash
-scoop install git msys2 time unxutils
+scoop install git llvm mingw msys2 time unxutils
 ```
 
 Visual Studio Code　をインストールする
