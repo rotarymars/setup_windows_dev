@@ -31,11 +31,26 @@ scoop install vscode
 open git bash
 
 ```bash
-cd ~
+cd /c
 mkdir -p local/lib
 cd local/lib
 git clone https://github.com/atcoder/ac-library.git
 ```
+
+## set up online judgement tools
+open git bash
+
+```bash
+cd /c
+mkdir -p local
+cd local
+
+source ~/anaconda3/Scripts/activate
+python -m venv oj_env
+source /c/local/oj_env/Scripts/activate
+pip3 install online-judge-tools
+```
+
 
 # reference
 msys2のコンソールをセットアップする
