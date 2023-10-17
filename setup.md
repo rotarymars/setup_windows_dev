@@ -27,7 +27,11 @@ scoop bucket add extras
 scoop install vscode
 ```
 
+## set up atcoder library
+open git bash
 
+
+# reference
 msys2のコンソールをセットアップする
 
 https://www.ncaq.net/2020/11/10/15/40/08/
