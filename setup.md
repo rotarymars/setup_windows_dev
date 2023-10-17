@@ -30,6 +30,12 @@ scoop install vscode
 ## set up atcoder library
 open git bash
 
+```bash
+cd ~
+mkdir -p local/lib
+cd local/lib
+git clone https://github.com/atcoder/ac-library.git
+```
 
 # reference
 msys2のコンソールをセットアップする
