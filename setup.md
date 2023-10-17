@@ -17,7 +17,7 @@ iwr -useb get.scoop.sh | iex
 必要なアプリケーションをインストールする
 
 ```bash
-scoop install git llvm mingw msys2 time unxutils anaconda3
+scoop install git llvm mingw msys2 unxutils anaconda3
 ```
 
 Visual Studio Code　をインストールする
