@@ -27,6 +27,17 @@ scoop bucket add extras
 scoop install vscode
 ```
 
+## register git bash here
+エクスプローラのパスに
+
+%HOMEPATH%\scoop\apps\git\current
+
+を入力。
+表示されたフォルダの
+install-context.reg
+をダブルクリックする。
+
+
 ## set up atcoder library
 open git bash
 
