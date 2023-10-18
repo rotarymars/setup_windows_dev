@@ -62,6 +62,16 @@ source /c/local/oj_env/Scripts/activate
 pip3 install online-judge-tools
 ```
 
+## install fonts
+
+```bash
+cd /c/local
+git clone https://github.com/powerline/fonts.git
+```
+
+SourceCodePro ディレクトリ内の *.otf をすべて選んで、右クリックからインストール
+
+
 
 # reference
 msys2のコンソールをセットアップする
