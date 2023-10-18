@@ -1,3 +1,55 @@
+[credential "helperselector"]
+	selected = manager
+[alias]
+	co = checkout
+	br = branch
+	mg = merge
+	stat = status
+	st = status
+	sw = switch
+	ds = diff --stat
+	sm = submodule
+	ci = commit
+	cia = commit --amend
+	chp = cherry-pick
+	l = log --color
+	lo = log --oneline --color
+	lg = log --graph --pretty=format:'%C(yellow)%h%C(green)%d%Creset %s %Cblue[%ad]%C(bold blue)<%an>%Creset' --abbrev-commit --date=short --branches --color
+	lga = log --graph --pretty=format:'%C(yellow)%h%C(green)%d%Creset %s %Cblue[%ad]%C(bold blue)<%an>%Creset' --abbrev-commit --date=short --branches --all --color
+	dt = difftool
+	dc = diff --check
+	dname = diff --name-only
+	dns = diff --name-status
+	mt = mergetool
+	d = diff
+	dw = diff --color-words
+	top = rev-parse --show-toplevel
+	tags = tag -s
+	parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
+[alias "r"]
+	s = remote show
+	p = remote prune
+	rb = remove-remote-branch
+[alias "r.s"]
+	o = remote show origin
+[alias "r.p"]
+	o = remote prune origin
+[alias "r.rb"]
+	o = remove-remote-branch origin
+[push]
+	default = simple
+[color]
+	ui = auto
+[credential]
+	helper = store
 [core]
-  preloadindex = true
-  autoCRLF = false
+	whitespace = cr-at-eol
+	pager = less -x1,5
+	hooksPath = git_hooks
+    preloadindex = true
+    autoCRLF = false
+
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
