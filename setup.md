@@ -5,6 +5,17 @@
 [Visual Studio](https://visualstudio.microsoft.com/ja/) から　Visual Studio community editionのインストールをする。
 C++ の項目は必ずチェックを入れる。
 
+## anacondaを入れておく
+
+anacondaを入れておく
+scoop からだとエラーが出て入れられないのでanacondaを別でダウンロードして入れておく
+
+以下はエラーが出てしまう
+
+```bash
+scoop install anaconda3
+```
+
 ## scoop　のインストールと必要なツールのインストール
 
 scoopのインストールを行う。
@@ -17,7 +28,7 @@ iwr -useb get.scoop.sh | iex
 必要なアプリケーションをインストールする
 
 ```bash
-scoop install git llvm mingw msys2 unxutils anaconda3
+scoop install git less llvm mingw unxutils
 ```
 
 Visual Studio Code　をインストールする
